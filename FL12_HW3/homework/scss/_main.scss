@@ -1,0 +1,219 @@
+@mixin button {
+  background-color: #55a100;
+  width: 142px;
+  height: 44px;
+  color: #f2f3f7;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+* {
+  font-family: sans-serif;
+  color: #2c2e3c;
+  margin: 0;
+  padding: 0;
+
+
+
+
+
+  .header {
+    height: 720px;
+    background-image: url(../img/m-h-day.jpg);
+    overflow: visible;
+    border-radius: 0 0 40% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -282px;
+
+    .header-wrap {
+      width: 80vw;
+      margin: auto;
+
+      .landing-logo {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0 0 0;
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+
+        p {
+          display: flex;
+          flex-direction: column;
+          margin: 2px 0 0 10px;
+          font-size: 18px;
+
+          span {
+            margin: 2px;
+            text-align: center;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .header_heading {
+        font-size: 50px;
+        width: 40vw;
+        width: 500px;
+        font-size: 60px;
+        margin: 65px 0 0 0;
+        font-weight: bold;
+      }
+
+      .header_text {
+        width: 700px;
+        margin: 60px 0;
+        line-height: 25px;
+      }
+
+      .header_button {
+        @include button;
+      }
+
+      .login {
+        margin: 0 0 0 180px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .section {
+    .section_text {
+      font-size: 40px;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .section_card_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 25px 0;
+
+      .section_card {
+        width: 1120px;
+        display: flex;
+        background-color: #21222e;
+        margin-bottom: 25px;
+        height: 250px;
+        padding: 15px;
+        border-radius: 10px;
+
+        .section_card_img {
+          height: auto;
+          width: 400px;
+          border-radius: 5px;
+        }
+
+        .section_card_right_container {
+
+          margin: 40px auto 0;
+
+          .section_card_heading {
+            font-size: 22px;
+            color: #ffffff;
+          }
+
+          .section_card_heading,
+          .section_link {
+            text-align: center;
+          }
+
+          .section_card_text {
+            text-align: justify;
+            width: 500px;
+            margin: 40px 0;
+            color: #C0C2CE;
+
+          }
+
+          p,
+          a {
+            color: #C0C2CE;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .section_banner {
+      display: flex;
+      background: linear-gradient(to right, #509d03, #394cd4);
+      border-radius: 5px;
+      margin: auto;
+      position: relative;
+      height: 130px;
+      bottom: -65px;
+      width: 1200px;
+
+      .section_banner_text_wrap {
+        margin: 25px 0 0 150px;
+
+        .section_banner_heading {
+          font-size: 24px;
+        }
+
+        .section_banner_text {
+          color: #c0c2ce;
+          margin: 15px 0 0 0;
+          font-size: 13px;
+        }
+      }
+
+      .section_banner_button {
+        margin: 44px 0 0 450px;
+        @include button;
+      }
+    }
+  }
+
+  footer {
+    width: 100vw;
+
+    .footer-wrap {
+      padding-top: 130px;
+      display: flex;
+      background-color: #21222e;
+      height: 100px;
+      justify-content: space-around;
+
+      p,
+      span {
+        color: #c0c2ce;
+      }
+
+      .footer_text {
+        width: 350px;
+      }
+
+      .landing-logo {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+
+        p {
+          display: flex;
+          flex-direction: column;
+          margin: 2px 0 0 10px;
+          font-size: 18px;
+
+          span {
+            margin: 2px;
+            text-align: center;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
