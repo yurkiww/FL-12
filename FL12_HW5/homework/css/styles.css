@@ -1,0 +1,276 @@
+body {
+  font-family: roboto;
+}
+.post-1 {
+  background: #9d27b0;
+}
+.post-2 {
+  background: #9bb800;
+}
+.post-3 {
+  background: #ed5120;
+}
+.post-4 {
+  background: #9d27b0;
+}
+.post-5 {
+  background: #2d95bb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0b192f;
+}
+.img {
+  width: 100%;
+}
+.wrap {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1400px;
+}
+.logo {
+  margin: auto 0 auto 10px;
+}
+.logo-text {
+  color: #ffffff;
+}
+.red {
+  color: #e20060;
+}
+
+.header_heading {
+  background-color: #024161;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+}
+
+.link-wrap {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 10px;
+}
+.link-li {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  align-items: center;
+}
+.header_text {
+  position: relative;
+  height: 8px;
+  top: -14vh;
+  padding: 0 30px;
+  width: 70%;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.header_title {
+  font-size: 27px;
+  font-weight: 200;
+}
+.header_description {
+  margin-top: 10px;
+}
+.main {
+  display: flex;
+  margin: 0 0 8px 0;
+}
+.section {
+  width: 98%;
+  display: flex;
+  color: #ffffff;
+}
+.section_photo {
+  width: 50%;
+}
+.section_description {
+  width: 50%;
+  padding: 4% 4% 0 4%;
+}
+.description {
+  font-weight: 100;
+  font-size: 11px;
+  padding-bottom: 20px;
+}
+
+.aside {
+  width: 85%;
+}
+
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.news_title,
+.news_description {
+  background-color: #fff;
+  padding: 15px;
+  font-weight: 100;
+}
+.footer {
+  height: 50px;
+  background: #024161;
+  color: #617594;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.right_side {
+  width: 100px;
+  margin: 10px 10px 0 0;
+}
+.left_side {
+  margin: 10px 0 0 10px;
+}
+.section:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.section:nth-child(2n) .title_wrap {
+  flex-direction: row-reverse;
+}
+
+.section:nth-child(2n) .title_wrap,
+.section:nth-child(2n) .description {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.section:last-child .section_photo {
+  display: none;
+}
+.section:last-child .section_description {
+  width: 100%;
+}
+.section:nth-child(1) .section_description {
+  background-color: #ae00b1;
+}
+.section:nth-child(2) .section_description {
+  background-color: #8fc100;
+}
+.section:nth-child(3) .section_description {
+  background-color: #fe2d00;
+}
+.section:nth-child(4) .section_description {
+  background-color: #ae00b1;
+}
+.section:nth-child(5) .section_description {
+  background-color: #0096be;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 100;
+  margin: 0 0 20px;
+}
+.date {
+  opacity: 0.2;
+}
+.number {
+  font-size: 27px;
+}
+.month {
+  font-size: 17px;
+}
+.news_title {
+  font-weight: 100;
+  font-size: 20px;
+}
+.news_description {
+  font-size: 11px;
+}
+.date_mobile {
+  display: none;
+}
+.link-li:hover {
+  background-color: #1f52a4;
+}
+@media (max-width: 768px) {
+  .header_text {
+    width: 100%;
+  }
+  .wrap {
+    width: 98%;
+  }
+  .section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section_photo,
+  .section_description {
+    width: 100%;
+  }
+  .section:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .section:nth-child(2n) .title_wrap,
+  .section:nth-child(2n) .description {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .footer {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .right_side {
+    margin: auto;
+  }
+  .content {
+    margin: 0 8px 0 0;
+  }
+
+  .nav {
+    display: none;
+  }
+  .logo {
+    margin: auto;
+  }
+  .header_heading {
+    height: 100px;
+  }
+  .date_desktop {
+    display: none;
+  }
+  .date_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 10px 0;
+  }
+
+  @media (max-width: 480px) {
+    .main {
+      flex-direction: column;
+    }
+    .aside {
+      width: 100%;
+    }
+    .content {
+      margin: 0;
+    }
+    .header_text {
+      /* top: -13vw; */
+    }
+  }
+}
