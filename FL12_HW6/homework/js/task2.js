@@ -1,6 +1,6 @@
-let a = prompt("Please enter side A:");
-let b = prompt("Please enter side B:");
-let c = prompt("Please enter side C:");
+let a = prompt('Please enter side A:');
+let b = prompt('Please enter side B:');
+let c = prompt('Please enter side C:');
 
 
 
